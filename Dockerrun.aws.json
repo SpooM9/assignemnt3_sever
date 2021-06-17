@@ -1,0 +1,18 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+      {
+        "name": "server",
+        "image": "public.ecr.aws/c3o2y6u8/server:latest",
+        "hostname": "server",
+        "essential": true,
+        "portMappings": [
+          {
+            "hostPort": 80,
+            "containerPort": 8080
+          }
+        ],
+        "memory": 100
+      }
+    ]
+}
